@@ -28,7 +28,7 @@ const ProjectSummary = props => {
 
   const style = settings ? createTodoTheme(todo.priority, settings) : null;
   const todoLogo = (
-    <span className='btn-large btn-floating todoLogo' style={style}>
+    <span className='btn-large btn-floating center todoLogo' style={style}>
       {firstLetter}
     </span>
   );

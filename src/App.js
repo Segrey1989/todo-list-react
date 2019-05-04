@@ -18,10 +18,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <NavBar />
-
         {!auth.isEmpty && <Sidebar />}
         <Route exact path='/' component={Dashboard} />
-
         <Route path='/signin' component={SignIn} />
         <Route path='/signup' component={SignUp} />
         <Route path='/create' component={CreateProject} />

@@ -66,7 +66,7 @@ export const signOut = () => {
       .auth()
       .signOut()
       .then(() => {
-        firebase.logout();
+        return firebase.logout();
       })
       .then(() => {
         dispatch({ type: 'SIGNOUT' });

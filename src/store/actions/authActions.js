@@ -45,15 +45,6 @@ export const doSignInWithFacebook = provider => {
         dispatch({ type: 'SIGNUP_SUCCESS' });
       })
       .catch(err => {
-        // const email = err.email;
-        // firebase
-        // .auth()
-        // .fetchProvidersForEmail(email)
-        // .then(result => {
-        // console.log(result);
-        // const prov = result[0].split('.')[0];
-        // auth().signInWithRedirect(providers[prov]);
-        // });
         dispatch({ type: 'SIGNUP_ERROR', err });
       });
   };

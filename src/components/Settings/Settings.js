@@ -10,9 +10,6 @@ class Settings extends Component {
   submitFormHandler = e => {
     e.preventDefault();
     this.props.installSettings(this.state);
-    const formName = e.target.id;
-    const form = document.getElementById(formName);
-    form.reset();
   };
 
   changeColorHandler = e => {

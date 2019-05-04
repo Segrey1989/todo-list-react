@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: 'PUT HERE API KEY',
+  apiKey: 'AIzaSyAeH71xmT1OraCG6L9qOMvBtrxRU9sSn6A',
   authDomain: 'todo-list-8711f.firebaseapp.com',
   databaseURL: 'https://todo-list-8711f.firebaseio.com',
   projectId: 'todo-list-8711f',
@@ -12,5 +12,6 @@ const config = {
 };
 firebase.initializeApp(config);
 firebase.firestore();
+firebase.auth();
 
 export default firebase;

@@ -1,5 +1,5 @@
 html {
-  background: #e3f2fd;
+  background: #deebed;
 }
 
 .nav-wrapper {
@@ -7,7 +7,7 @@ html {
   top: 0;
   left: 0;
   z-index: +5;
-  background-color: #004d40;
+  background-color: #b1e6d1;
 }
 
 .signInContainer {

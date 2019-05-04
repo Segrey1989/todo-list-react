@@ -31,7 +31,6 @@ export const updateProject = (newProject, id) => {
       .doc(id)
       .update({
         ...newProject,
-        // createdAt: new Date(),
       })
       .then(() => {
         dispatch({ type: 'UPDATE_PROJECT', newProject });

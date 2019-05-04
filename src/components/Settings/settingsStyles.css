@@ -1,0 +1,13 @@
+.settings {
+  margin: 10% auto;
+}
+
+.settings h4,
+.settings p {
+  color: #004d40;
+}
+
+.formSubmitBtn {
+  width: 30%;
+  margin: 0 35%;
+}

@@ -1,0 +1,130 @@
+html {
+  background: #e3f2fd;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: +5;
+  background-color: #004d40;
+}
+
+.signInContainer {
+  margin: 0 2%;
+}
+
+form {
+  position: relative;
+  margin-top: 100px;
+}
+
+.dasboard-icons {
+  position: fixed;
+  top: 70px;
+  right: 1%;
+}
+
+.dashboard {
+  margin-top: 70px;
+}
+
+.project-list {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 1% 2%;
+}
+
+.project-summary .card-content {
+  padding: 1%;
+}
+
+.select-priority {
+  margin-top: 3%;
+}
+
+.project-details {
+  width: 70%;
+  height: 100%;
+  margin: 15vh auto;
+}
+
+.projectDetailsBtn {
+  margin: 1%;
+  border-radius: 10%;
+}
+
+.projectDetailsBtn:hover,
+.navSign:hover {
+  color: rgb(10, 10, 48);
+  cursor: pointer;
+}
+
+.card-tile {
+  height: 170px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.todoInfo span {
+  margin-right: 3%;
+}
+.todoInfoList {
+  margin-left: 45%;
+}
+
+.wrapper-list {
+  display: grid;
+  grid-template-columns: 12% 1fr 7%;
+}
+
+.wrapper-tile {
+  display: grid;
+  grid-template-columns: 1fr 10%;
+}
+
+.todoLogo,
+.todoOptions {
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.todo-container {
+  width: 80%;
+}
+
+.mainNavHide {
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .todoLogo {
+    display: none;
+  }
+
+  .todoInfoList {
+    margin: 0 auto;
+  }
+
+  .mainNavHide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dasboard-icons {
+    display: none;
+  }
+  .wrapper-list {
+    display: grid;
+    grid-template-columns: 0 1fr 10%;
+  }
+  .card-tile {
+    height: inherit;
+  }
+
+  .todoInfoList {
+    margin-left: 20%;
+  }
+}

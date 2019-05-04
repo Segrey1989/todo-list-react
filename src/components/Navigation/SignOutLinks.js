@@ -1,7 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import {
+  resetFilterParam,
+  resetSortParam,
+} from '../../store/actions/dataActions';
 
-const SignOutLinks = () => {
+const SignOutLinks = props => {
+  props.resetFilterParam();
+  props.resetSortParam();
   return (
     <div className='container'>
       <ul className='right'>
@@ -20,4 +27,14 @@ const SignOutLinks = () => {
   );
 };
 
-export default SignOutLinks;
+const mapDispatchToProps = dispatch => {
+  return {
+    resetFilterParam: () => dispatch(resetFilterParam()),
+    resetSortParam: () => dispatch(resetSortParam()),
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(SignOutLinks);
